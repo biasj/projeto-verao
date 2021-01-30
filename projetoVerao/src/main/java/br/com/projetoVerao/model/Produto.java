@@ -30,7 +30,7 @@ public class Produto implements Serializable {
     
     @NotBlank(message = "Por favor, informe uma descrição do produto.")
     @Size(min = 5, max = 50, message = "A descrição do produto deve estar entre {min} e {max} caracteres.")
-    @Column(name = "nome", nullable = false)
+    @Column(name = "descricao", nullable = false)
     private String descricao;
     
     @NotNull(message = "informe um valor ao produto.")
